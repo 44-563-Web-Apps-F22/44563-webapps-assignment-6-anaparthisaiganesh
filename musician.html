@@ -38,8 +38,8 @@
 function checkGuess(){
     console.log("Getting form values")
     musician_name = document.getElementById("form1_age").value
-    user_entered = document.getElementById("form1_nick").value
-    if(musician_name == user_entered&&total<3){
+    user_value = document.getElementById("form1_nick").value
+    if(musician_name == user_value&&total<3){
         alert("You got it right.")
         total=0
         correct += 1

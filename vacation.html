@@ -19,8 +19,8 @@
         <label for="form1_nick">Domestic</label>
         <input type="checkbox" id="form1_nick" name="form1_nick" value=True autofocus> <br>
 
-        <label for="cb1_onion">Resort</label>
-        <input type="checkbox" id="cb1_onion" name="topping3" value=False checked><br>
+        <label for="resort1">Resort</label>
+        <input type="checkbox" id="resort1" name="topping3" value=False checked><br>
 
         <input type="button" class="btn btn-primary" onclick="selectVacation()" value="Select a vacation">
     </form>
@@ -43,7 +43,7 @@
             my_vacation = {}
             Travel = document.getElementById("form1_age").value
             domesticvalue = document.getElementById("form1_nick").value
-            resort = document.getElementById("cb1_onion").value
+            resort = document.getElementById("resort1").value
             out = document.getElementById("result")
             if (document.getElementById("form1_age").checked) {
                 my_vacation.Travel = true
@@ -57,7 +57,7 @@
             else {
                 my_vacation.domesticvalue = false
             }
-            if (document.getElementById("cb1_onion").checked) {
+            if (document.getElementById("resort1").checked) {
                 my_vacation.resort = true
             }
             else { my_vacation.resort = false }
